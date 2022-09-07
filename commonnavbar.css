@@ -1,0 +1,14 @@
+.navbar{
+    position: sticky;
+}
+.dropdown-menu-dark{
+    background-color: #d3d3d3;
+    color: #000000;
+}
+.force-scroll {
+
+    overflow-y: scroll;
+    
+    height: 200px;
+    
+    }

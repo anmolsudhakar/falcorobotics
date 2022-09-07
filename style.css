@@ -1,0 +1,275 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html{
+  font-size: 100%;
+}
+
+
+.fontstyle {
+  font-family: 'Shojumaru', cursive;
+
+}
+
+.oceanblue {
+  color: rgb(6, 77, 124);
+}
+
+
+.header {
+  text-align: center;
+}
+
+#navbartitle {
+  color: rgb(0, 153, 255);
+}
+
+/* .btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+} */
+.carousel {
+  width: 100%;
+  height: 180px;
+
+}
+
+.slogan {
+  color: yellow;
+  margin: 1rem;
+  padding: .5rem;
+}
+
+.nav-item>a:hover {
+  color: yellow;
+}
+
+.contact {
+  text-align: center;
+}
+
+.messagebutton {
+  color: white;
+  border-radius: 20px;
+  margin-top: .5rem;
+}
+
+.messagebutton:hover {
+  background-color: rgba(239, 118, 12, 0.985);
+  color: black;
+}
+
+#contact {
+  background-color: black;
+  color: rgba(98, 255, 0, 0.489);
+  z-index: 100;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.circle:hover {
+  border-radius: 50%;
+}
+
+.footercontainer {
+  height: 3rem;
+}
+
+/* .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: .4rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  } */
+
+.fa-thin {
+  padding: 20px;
+  font-size: 30px;
+  width: .7rem;
+  background-color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-brands {
+  width: 4rem;
+  height: 4rem;
+}
+
+.form-floating {
+  max-width: 50%;
+}
+
+.form-row {
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-6 {
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  width: .3rem;
+}
+
+@media (max-width:1170px) {
+  html{
+      font-size: 90%;
+  }
+  
+}
+@media (max-width:1160px) {
+  html{
+      font-size: 85%;
+  }
+  
+}
+@media (max-width:1000px) {
+  html{
+      font-size: 80%;
+  }
+  
+}
+@media (max-width:628px) {
+  html{
+      font-size: 70%;
+  }
+  
+}
+@media (max-width:613px) {
+  html{
+      font-size: 60%;
+  }
+  
+}
+/* @media (max-width:578px) {
+  html{
+    font-size: 55%;
+} */
+  /* .contact-icon{
+    display:flex;
+    flex-direction: row;
+  } 
+  
+}*/
+/* @media (max-width:575px) {
+  html{
+      font-size: 40%;
+  }
+  
+} */
+
+@media screen and (max-width: 578px) {
+  /* html{
+    font-size: 55%;
+} */
+  .direct-contact-container,
+  .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .form-control,
+  textarea {
+
+    margin: 0 auto;
+  }
+
+
+  .name,
+  .email,
+  textarea {
+    width: 12.5rem;
+  }
+
+  .direct-contact-container {
+    margin-top: 3.75rem;
+    max-width: 12.5rem;
+  }
+
+  .social-media-list {
+    left: 0;
+  }
+
+  .social-media-list li {
+    height: 3.438rem;
+    width: 3.438rem;
+    line-height: 3.438rem;
+    font-size: 0.125rem;
+  }
+
+  .social-media-list li:after {
+    width: 3.438rem;
+    height: 3.438rem;
+    line-height: 3.438rem;
+  }
+
+}
+
+@media screen and (max-width:410px) {
+  .direct-contact-container,
+  .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .form-control,
+  textarea {
+
+    margin: 0 auto;
+  }
+
+
+  .name,
+  .email,
+  textarea {
+    width: 9.5rem;
+  }
+
+  .direct-contact-container {
+    margin-top: 1.75rem;
+    max-width: 9.5rem;
+  }
+
+  .social-media-list {
+    left: 0;
+  }
+
+  .social-media-list li {
+    height: 3.438rem;
+    width: 3.438rem;
+    line-height: 3.438rem;
+    font-size: 0.125rem;
+  }
+
+  .social-media-list li:after {
+    width: 3.438rem;
+    height: 3.438rem;
+    line-height: 3.438rem;
+  }
+  .send-button {
+    width: 100%;
+  }
+  html{
+    
+  }
+} 

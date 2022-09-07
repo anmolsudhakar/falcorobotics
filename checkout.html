@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="checkout.css">
+
+<body>
+    <div class="container col-8 my-5 br-2 rounded">
+        <div class="row g-3">
+            <div class="col-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-item-center">
+                    <span class="text-muted">Your Cart</span>
+                    <span class="badge bg-secondary rounded-pill">3</span>
+                </h4>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6>Product name</h6>
+                            <span class="text-muted">Brief Description</span>
+                        </div>
+                        <span class="text-muted">Rs 500</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6>Second Product</h6>
+                            <span class="text-muted">Brief Description</span>
+                        </div>
+                        <span class="text-muted">Rs 200</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6>Third Product</h6>
+                            <span class="text-muted">Brief Description</span>
+                        </div>
+                        <span class="text-muted">Rs 600</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6 class="text-success">Promo Code</h6>
+                            <span class="text-muted">Sale10</span>
+                        </div>
+                        <span class="text-muted">Rs 100</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6>Total (Rs)</h6>
+                        </div>
+                        <span class="text-muted">Rs 1200</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-8">
+                <h4>Billing Address</h4>
+                <form>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label" for="name">Name</label>
+                            <input type="text" id="name" name = "name" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label" for="mobile">Mobile</label>
+                            <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile no." class="form-control" placeholder=">
+                        </div>
+                        <div class="col-12">
+                            <label class="from-label" for="username">Username</label>
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="usrname">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="email">Email
+                                <span class="text-muted"> (Optional)</span>
+                            </label>
+                            <input type="text" id="email" name="email" placeholder="Your Email ID" class="form-control">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="address">Address </label>
+                            <input type="text" id="address" class="form-control">
+                        </div>
+                        <div class="col-5">
+                            <label class="form-label" for="country">Country </label>
+                            <select class="form-select" id="country">
+                                <option selected>Choose</option>
+                                <option>India</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label" for="state">State </label>
+                            <select class="form-select" id="state">
+                                <option selected>Choose</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Puducherry">Puducherry</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label" for="zip">Zip </label>
+                            <input type="text" id="zip" class="form-control">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label class="form-check-label">Shipping address is the same as my billing address</label>
+                    </div>
+                    <hr>
+                    <!-- <h4>Payment</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Credit Card
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Debit Card
+                        </label>
+                      </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label" for="cardname">Name on Card </label>
+                            <input type="text" id="cardname" class="form-control">
+                            <small class="text-muted">Full name as displayed on card</small>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label" for="creditcard">Credit Card Number </label>
+                            <input type="text" id="creditcard" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label" for="expiration">Expiration </label>
+                            <input type="text" id="expiration" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label" for="cvv">CVV </label>
+                            <input type="text" id="cvv" class="form-control">
+                        </div>
+                    </div>
+                    <hr> -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4" id="rzp-button1" onclick="paynow()">Pay</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <button id="rzp-button1">Pay</button> -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+    function paynow() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var mobile = document.getElementById("mobile").value;
+
+
+        var options = {
+            "key": "rzp_test_o4ANr81ZduHdSF", // Enter the Key ID generated from the Dashboard
+            "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            "currency": "INR",
+            "name": "Acme Corp",
+            "description": "Test Transaction",
+            "image": "https://example.com/your_logo",
+            "order_id": "order_9A33XWu170gUtm", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+            "handler": function (response) {
+                alert(response.razorpay_payment_id);
+                alert(response.razorpay_order_id);
+                alert(response.razorpay_signature)
+            },
+            "prefill": {
+                "name": "name",
+                "email": "email",
+                "contact": "mobile"
+            },
+            "notes": {
+                "address": "Razorpay Corporate Office"
+            },
+            "theme": {
+                "color": "#3399cc"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.on('payment.failed', function (response) {
+            alert(response.error.code);
+            alert(response.error.description);
+            alert(response.error.source);
+            alert(response.error.step);
+            alert(response.error.reason);
+            alert(response.error.metadata.order_id);
+            alert(response.error.metadata.payment_id);
+        });
+        document.getElementById('rzp-button1').onclick = function (e) {
+            rzp1.open();
+            e.preventDefault();
+        }
+    }
+</script>
+</body>
+
+</html>

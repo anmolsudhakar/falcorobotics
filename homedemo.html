@@ -1,0 +1,926 @@
+<?php
+session_start();
+
+?>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
+        integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shojumaru">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css?h=8f5e14163a7b734564f2f16597a889e7">
+    <style>
+        .box {
+            background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, #e0e01286 100%);
+
+        }
+
+        .marginclass {
+            margin: 3rem;
+        }
+
+        .social-footer {
+            padding: 1rem;
+            background: #191717;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        .social-footer .social-footer-icons li:last-of-type {
+            margin-right: 0;
+        }
+
+        .social-footer .social-footer-icons .fa {
+            font-size: 1.3rem;
+            color: #ffffff;
+        }
+
+        .social-footer .social-footer-icons .fa:hover {
+            color: #000000;
+            transition: color 0.3s ease-in;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: #ff7200;
+        }
+
+        .whatsappclass a {
+            text-decoration: none;
+            color: rgb(39, 219, 19);
+        }
+
+        .icons ion-icon {
+            color: #ff7200;
+            font-size: 3rem;
+            padding-left: 2rem;
+            padding-top: 0.313rem;
+            transition: 0.3s ease;
+        }
+
+        .whatsappclass ion-icon {
+            color: rgb(22, 227, 32);
+            font-size: 3rem;
+            padding-left: 2rem;
+            padding-top: 0.313rem;
+            transition: 0.3s ease;
+        }
+
+        .icons ion-icon:hover {
+            color: #ff7200;
+        }
+
+        .aboutcard {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+
+        .card-body {
+            background-color: black;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .card-title {
+            color: white;
+        }
+
+        .card-text {
+            color: orange;
+        }
+
+        .card-body:hover {
+            background-color: rgba(0, 0, 0, 0.592);
+        }
+
+        .privacypolicy {}
+
+        .padder {
+            padding: 2rem;
+        }
+
+        .flexclass {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .marginclass1 {
+            width: 15rem;
+            height: 7rem;
+
+        }
+
+        .marginclass2 {
+            width: 15rem;
+            height: 7rem;
+        }
+
+        .whatsappclass ion-icon {
+            color: rgb(22, 227, 32);
+            font-size: 3rem;
+            padding-left: 2rem;
+            padding-top: 0.313rem;
+            transition: 0.3s ease;
+        }
+
+        .icons ion-icon:hover {
+            color: #ff7200;
+        }
+
+        .whatsappclass ion-icon:hover {
+            color: #0c3302;
+        }
+
+        .about-flex {
+            text-align: center;
+        }
+
+        .timeline-image {
+            border-color: #ffffff;
+        }
+
+        .portfolio-caption {
+            text-align: center;
+        }
+
+        .navbar {
+            position: sticky;
+        }
+
+        .dropdown-menu-dark {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .force-scroll {
+
+            overflow-y: scroll;
+
+            height: 200px;
+
+        }
+    </style>
+    <title>Falco Drones</title>
+</head>
+
+<body>
+    <div class="box">
+        <!-- <header>
+            <h1 class="fontstyle header"> <a class="navbar-brand fontstyle oceanblue" id="navbartitle"
+                    href="https://falcorobotics.in/" target="_blank">FalcoRobotics.PVT.LTD</a></h1>
+        </header> -->
+
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+            <div class="container-fluid padder">
+
+                <a class="navbar-brand fontstyle oceanblue" id="navbartitle" href="#home" target="_blank">Falco Robotics
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Drones
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Agricultural Drones</a></li>
+                                <li><a class="dropdown-item" href="#">Carrier Drones</a></li>
+                                <li><a class="dropdown-item" href="#">Camera Drones</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="categories.html" data-toggle="dropdown"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark force-scroll" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Batteries Chargers & Parts</a></li>
+                                <li><a class="dropdown-item" href="#">Multirotors and Parts</a></li>
+                                <li><a class="dropdown-item" href="#">Servos and parts</a></li>
+                                <li><a class="dropdown-item" href="#">Phantom Battery</a></li>
+                                <li><a class="dropdown-item" href="#">Hardware and Accessories</a></li>
+                                <li><a class="dropdown-item" href="#">Radios and Parts </a></li>
+                                <li><a class="dropdown-item" href="#">Electronic Speed Control(ESC)</a></li>
+                                <li><a class="dropdown-item" href="#">Propellers</a></li>
+                                <li><a class="dropdown-item" href="#">Brushless Motors</a></li>
+                                <li><a class="dropdown-item" href="#">Boats and Parts</a></li>
+                                <li><a class="dropdown-item" href="#">Camera Fpv and video systems</a></li>
+                                <li><a class="dropdown-item" href="#">Nitro and parts</a></li>
+                                <li><a class="dropdown-item" href="#">Electronics and arudino</a></li>
+                                <li><a class="dropdown-item" href="#">Miscellaneous</a></li>
+                                <li><a class="dropdown-item" href="#">Planes and Parts</a></li>
+                                <li><a class="dropdown-item" href="#">Used Items</a></li>
+                                <li><a class="dropdown-item" href="#">Gifts and Toys section</a></li>
+                                <!-- <li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <hr class="dropdown-divider">
+                        </li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><i class="bi bi-file-earmark-person-fill"></i>About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><i class="bi bi-person-lines-fill"></i>Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shopping_cart/checkouts.php"><i
+                                    class="bi bi-cart3"></i>Checkout</a>
+                        </li>
+
+                        <form class="d-flex">
+                            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Search</button> -->
+                            <button type="button" class="btn btn-primary btn-sm shadow-none me-lg-3 me-2"
+                                data-bs-toggle="modal" data-bs-target="#loginModal">
+                                Login
+                            </button>
+                            <button type="button" class="btn btn-primary btn-sm shadow-none " data-bs-toggle="modal"
+                                data-bs-target="#registerModal">
+                                Register
+                            </button>
+                        </form>
+
+
+
+                    </ul>
+                    <div class="slogan">
+                        <h5 class="fontstyle ">
+                            Your Intent We Invent
+                        </h5>
+                    </div>
+
+                    <div class="order-lg-10 nav-btns">
+                        <button type="button" class="btn-lg position-relative bg-dark">
+                            <a href="shopping_cart/cart.php"> <i class="bi bi-cart-fill"
+                                    style="font-size: 1.79rem; color: rgb(186, 182, 182);"></i></a>
+                            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary "
+                                style="font-size: 0.9rem;">5</span>
+                        </button>
+
+                        <!-- <button type="button" class="btn-lg position-relative bg-dark style: z-index: -1">
+                        <a href="#">  <i class="bi bi-arrow-through-heart"></i></a>
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                    </button> -->
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+        <!-- navbar modal -->
+        <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form action="">
+                        <div class="modal-header">
+                            <h5 class="modal-title d-flex align-items-center" id="staticBackdropLabel"><i
+                                    class="bi bi-person-circle fs-3 me-2"></i>User Login</h5>
+                            <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label class="form-label">Email address</label>
+                                <input type="email" class="form-control shadow-none" id="emailheader"
+                                    placeholder="Input your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control shadow-none" id="passwordheader">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <button type="submit" class="btn btn-dark shadow-none">Login</button>
+                                <a href="javascript: void(0)" class="text-secondary text-decoration-none"> Forgot
+                                    Password?</a>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <form action="" id="register-form">
+                        <div class="modal-header">
+                            <h5 class="modal-title d-flex align-items-center" id="staticBackdropLabel"><i
+                                    class="bi bi-person-lines-fill fs-3 me-2"></i>User Registration</h5>
+                            <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <span class="badge bg-danger mb-3 text-wrap lh-base">Note: Your details must match with Your
+                                ID (Aadhaar
+                                card, Passport, Drivery License,etc.)
+                                that will be required during check-in.</span>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 ps-0 mb-3">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" name="nameregister" class="form-control shadow-none"
+                                            id="nameregister" placeholder="Input your Name" required>
+                                    </div>
+                                    <div class="col-md-6 p-0 mb-3">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" name="emailregister" class="form-control shadow-none"
+                                            id="emailregister" placeholder="Input your Email" required>
+                                    </div>
+                                    <div class="col-md-6 ps-0 mb-3">
+                                        <label class="form-label">Phone</label>
+                                        <input type="number" name="phonenumregister" class="form-control shadow-none"
+                                            id="phoneregister" placeholder="Input your Phone no." required>
+                                    </div>
+                                    <div class="col-md-6 p-0 mb-3">
+                                        <label class="form-label">Picture</label>
+                                        <input type="file" name="pictureregister" accept=".jpg,.jpeg,.png,.webp"
+                                            class="form-control shadow-none" id="pictureregister"
+                                            placeholder="Input your Email" required>
+                                    </div>
+                                    <div class="col-md-12 p-0 mb-3">
+                                        <label class="form-label">Address</label>
+                                        <textarea class="form-control" name="addressregister"
+                                            placeholder="Input yourAddress" rows="3" required></textarea>
+                                    </div>
+
+                                    <div class="col-md-6 ps-0 mb-3">
+                                        <label class="form-label">Pincode</label>
+                                        <input type="number" name="pincoderegister" id="pincoderegister"
+                                            placeholder="Pincode" class="form-control shadow-none" placeholder="Pincode"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6 p-0 mb-3">
+                                        <label class="form-label">Date of birth</label>
+                                        <input type="date" name="dobregister" id="dob" class="form-control shadow-none"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6 ps-0 mb-3">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" name="passwordregister" id="passwordregister"
+                                            class="form-control shadow-none" placeholder="Password" required>
+                                    </div>
+                                    <div class="col-md-6 p-0 mb-3">
+                                        <label class="form-label">Confirm Password</label>
+                                        <input type="password" name="confirmpasswordregister"
+                                            id="confirmpasswordregister" class="form-control shadow-none"
+                                            placeholder="Confirm Password" required>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-dark shadow-none my-1" type="submit">Register</button>
+                                </div>
+
+                            </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- navbar modal ends -->
+
+        <div id="banner" class="banner">
+            <div class="banner-image"></div>
+            <div class="banner-caption">
+                <div class="container">
+                    <div class="row">
+                        <div class="caption-data" style="margin-top: 0px; opacity: 1;" data-animation-effect="fadeIn">
+                            <h1>We are AWESOME!</h1>
+                            <h3 class="padding-top30">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br /> Eos
+                                debitis provident nulla illum minus.</h3>
+                            <div class="padding-top60 contact-form">
+                                <a href="drone.html"><button class="btn cta-button">CLICK HERE</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container dabba" style="height:40rem" ;> -->
+
+        </div>
+
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="text-uppercase section-heading" style="font-family: Montserrat, sans-serif;">Services
+                        </h2>
+                        <h3 class="text-muted section-subheading">What we offer</h3>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i
+                                class="fa fa-circle fa-stack-2x text-primary"></i><a class="js-scroll-trigger"
+                                href="#portfolio"><i id="tra" class="fa fa-book fa-stack-1x fa-inverse"
+                                    style="color: rgb(255,255,255);"></i></a></span>
+                        <h1></h1><a href="#portfolio" class="section-heading js-scroll-trigger">FALCO TRAINING</a>
+                        <p class="text-muted">We at falco robotics we provide world class training with the best
+                            trainers
+                            from all over the country our trainers are well trained and well experience in their
+                            respective
+                            fields</p>
+                    </div>
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i
+                                class="fa fa-circle fa-stack-2x text-primary"></i><a
+                                href="https://play.google.com/store/apps/details?id=tech.falcorobotics.falcoroom"
+                                target="_blank"><i class="fa fa-map-marker fa-stack-1x fa-inverse zoom"></i></a></span>
+                        <h1></h1><a href="https://play.google.com/store/apps/details?id=tech.falcorobotics.falcoroom"
+                            target="_blank" class="section-heading">FALCO ROOMS</a>
+                        <p class="text-muted"><strong>Falco rooms provide you the best hospitality ever you can get we
+                                automate your normal room to make it more interesting and make it more useful</strong>
+                        </p>
+                    </div>
+                    <div class="col-md-4"><span class="fa-stack fa-4x"><i
+                                class="fa fa-circle fa-stack-2x text-primary"></i><a href="drone.html"> <i
+                                    class="bi bi-fan fa-stack-1x fa-inverse zoom"></i></a></span>
+                        <h1></h1><a href="admin/products.php" class="section-heading">FALCO DRONES</a>
+                        <p class="text-muted">We provide you the best drones </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="drone">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="text-uppercase section-heading">Drone</h1>
+                </div>
+            </div>
+            <br>
+            <div class="container-fluid">
+                <div class="container aboutcard ">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <i class="bi bi-fan" style="font-size: 2rem; color: rgb(255, 255, 255);"></i>
+                            <h3 class="card-title">Agriculture Drone</h3>
+                            <p class="card-text">An agricultural drone is an aerial vehicle used in agriculture
+                                operations,
+                                mostly in yield optimization and in monitoring crop growth and crop production. </p>
+                            <a href="drone.html#agriculturedrones" class="btn btn-primary">Read More</a>
+                        </div>
+
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <i class="bi bi-fan" style="font-size: 2rem; color: rgb(255, 255, 255);"></i>
+                            <h3 class="card-title">Camera Drone</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="drone.html#cameradrones" class="btn btn-primary">Read More</a>
+                        </div>
+
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <i class="bi bi-fan" style="font-size: 2rem; color: rgb(255, 255, 255);"></i>
+                            <h3 class="card-title">Delivery Drone</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="drone.html#deliverydrones" class="btn btn-primary">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container flexclass">
+                    <div class="videos">
+                        <video width="420" height="290" controls autoplay muted loop>
+                            <source src="agrivideo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="420" height="290" controls autoplay muted loop>
+                            <source src="video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="videos">
+                        <video width="420" height="290" controls autoplay muted loop>
+                            <source src="cameravideo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br>
+
+        <section id="training">
+            <div class="container" style="background-color: black;">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="text-uppercase section-heading"
+                            style="margin: 0 0 25px;font-family: Montserrat, sans-serif; color: white; ">Training</h2>
+                        <h3 class="text-muted section-subheading">What we have accomplished</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" data-toggle="modal"><img
+                                class="img-fluid" src="portfolio1.jpg"></a>
+                        <div class="portfolio-caption">
+                            <h4 style="color: white;">Demo Session</h4>
+                            <p class="text-muted"><em>DAV Loni Road</em></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" data-toggle="modal"><img
+                                class="img-fluid" src="portfolio2.jpg"></a>
+                        <div class="portfolio-caption">
+                            <h4 style="color: white;">Workshop</h4>
+                            <p class="text-muted"><em>Delhi Technical Campus</em></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" data-toggle="modal"><img
+                                class="img-fluid" src="portfolio3.jpg"></a>
+                        <div class="portfolio-caption">
+                            <h4 style="color: white;">Workshop</h4>
+                            <p class="text-muted"><em>SLS DAV Mausam Vihar</em></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" data-toggle="modal"><img
+                                class="img-fluid" src="portfolio4.jpg"></a>
+                        <div class="portfolio-caption">
+                            <h4 style="color: white;">Workshop</h4>
+                            <p class="text-muted"><em>Icon School</em></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" data-toggle="modal"><img
+                                class="img-fluid img-fluid" src="portfolio5.jpg"></a>
+                        <div class="portfolio-caption">
+                            <h4 style="color: white;">Drone Workshop</h4>
+                            <p class="text-muted"><em>Tula's International School</em></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" data-toggle="modal"><img
+                                class="img-fluid" src="portfolio6.jpg"></a>
+                        <div class="portfolio-caption">
+                            <h4 style="color: white;">Workshop, App launch</h4>
+                            <p class="text-muted"><em>SLS DAV Mausam Vihar</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container dabba" style="height:5rem" ;>
+
+        </div>
+
+        <section id="about">
+            <div class="container about-flex"
+                style="background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, #e0e01286 100%);">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="text-uppercase" style="font-family: Montserrat, sans-serif;margin-bottom: 15px;">
+                            About
+                        </h2>
+                        <h3 class="text-muted section-subheading">Our Journey</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="list-group timeline">
+                            <li class="list-group-item">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="about1.jpg">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>July 2019</h4>
+                                        <h4 class="subheading">Our Humble Beginnings</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Small beginnings are the launching pad to great
+                                            endings.<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="about2.jpg">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>December 2020</h4>
+                                        <h4 class="subheading">Pre School</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">When little people are overwhelmed by big emotions, its
+                                            our
+                                            job to share our calm, not to join their chaos.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="about3.jpg">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>March 2020</h4>
+                                        <h4 class="subheading">Secondary School</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">We do not to drag the world kicking and screaming into a
+                                            new
+                                            awareness. We simply do our work… sacredly, secretly, silently … and those
+                                            with
+                                            “eyes to see and ears to hear" will respond</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="about4.jpg">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>July 2020</h4>
+                                        <h4 class="subheading">Falco Rooms</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Falco rooms provide you the best hospitality ever you can
+                                            get
+                                            we automate your normal room to make it more interesting and make it more
+                                            useful.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item timeline-inverted">
+                                <div class="timeline-image"><img class="rounded-circle img-fluid" src="dronelogo.png">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>July 2020</h4>
+                                        <h4 class="subheading">Falco Drones</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Falco rooms provide you the best hospitality ever you can
+                                            get
+                                            we automate your normal room to make it more interesting and make it more
+                                            useful.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image rounded-circle" style="background-color: rgb(0, 0, 0);">
+                                <h4 class="text-center" style="margin-left: 0;padding-right: .9rem;color: rgb(255, 255, 255);">Be Part<br>&nbsp;Of
+                                    Our<br>&nbsp;Story!</h4>
+                            </div>
+                        </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="text-uppercase section-heading">About Us</h1>
+                </div>
+            </div> -->
+
+
+                <div class="container aboutcard ">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <i class="bi bi-book-fill" style="font-size: 2rem; color: rgb(255, 255, 255);"></i>
+                            <h3 class="card-title">Journey</h3>
+                            <p class="card-text">Our Story began in 2019. Back then we were a group of engineers that
+                                were
+                                giving
+                                consultancy regarding Robotics and Drone.<br>
+                                Today we are privileged to connect with thousands of students with exceptional teaching
+                                and
+                                more
+                                than 10 schools in 5 different states and manufacturing of customized drones for both
+                                civilians
+                                and
+                                defence.</p>
+                            <a href="about.html#journey" class="btn btn-primary">Read More</a>
+                        </div>
+
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <i class="bi bi-globe" style="font-size: 2rem; color: rgb(255, 255, 255);"> </i>
+                            <h3 class="card-title">Vision</h3>
+                            <p class="card-text">1. Training of Drones in Indian Army (13 Mahar Regt, 8 Mahar Jaipur,
+                                235
+                                Engineers
+                                Regt. )
+                                <br>
+                                2. Making of Customized drones, services.
+                            </p>
+                            <a href="about.html#vision" class="btn btn-primary">Read More</a>
+                        </div>
+
+                    </div>
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <i class="bi bi-bookmark-fill" style="font-size: 2rem; color: rgb(255, 255, 255);"></i>
+                            <h3 class="card-title">Achievements</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="about.html#achievements" class="btn btn-primary">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6  mb-5 px-4">
+                        <div class="rounded bg-white shadow p-4">
+                            <iframe class="rounded shadow w-100 mb-4" height="320px"
+                                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3503.5371109388716!2d77.3166097!3d28.583659500000003!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1658564000100!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" class="">
+                            </iframe>
+                            <a href="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3503.5371109388716!2d77.3166097!3d28.583659500000003!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1658564000100!5m2!1sen!2sin"
+                                class="d-inline-block text-decoration-none mb-2 text-black mt-2">
+                                <i class="bi bi-geo-alt-fill"></i>Sector-16,Noida , UttarPradesh
+                            </a>
+
+                            <h5>Call us</h5>
+
+                            <a href="tel: +918700453757" class="d-inline-block text-decoration-none text-dark mb-2">
+                                <i class="bi bi-telephone-fill"> </i>+918700453757
+                            </a>
+                            <h5>Email </h5>
+
+                            <a href="mailto:falcorobotics.official@gmail.com"
+                                class="d-inline-block text-decoration-none text-dark mb-2">
+
+                                <i class="bi bi-envelope-fill"> </i>falcorobotics.official@gmail.com
+                            </a>
+
+                            <h5>Follow us</h5>
+
+                            <a href="#" class="d-inline-block text-decoration-none text-dark mb-3">
+                                <span class="text-dark badge bg-light p-1 fs-6">
+                                    <i class="bi bi-facebook me-1">Facebook</i></a>
+                            </span>
+                            <a href="#" class="d-inline-block text-decoration-none text-dark mb-3">
+                                <span class="text-dark badge bg-light p-1 fs-6 ">
+                                    <i class="bi bi-twitter me-1"></i>Twitter</a>
+                            </span>
+                            <a href="#" class="d-inline-block text-decoration-none text-dark mb-3">
+                                <span class="text-dark badge bg-light p-1 fs-6">
+                                    <i class="bi bi-instagram me-1"></i>Instagram</a>
+                            </span>
+                            <a href="#" class="d-inline-block text-decoration-none text-dark mb-3">
+                                <span class="text-dark badge bg-light p-1 fs-6">
+                                    <i class="bi bi-linkedin me-1"></i>Linkedin</a>
+                            </span>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-6 col-md-6  mb-4 px-4">
+
+                        <div class="rounded bg-white shadow-none p-1 border border-dark">
+                            <form action="mail.php" method="POST">
+                                <h5>Send a message</h5>
+                                <div class="mt-3">
+                                    <label for="namecontact" class="form-label fw-500">Name</label>
+                                    <input name="namecontact" type="text" class="form-control" id="namecontact">
+                                </div>
+
+                                <div class="mt-3">
+                                    <label for="emailcontact" class="form-label fw-500">Email</label>
+                                    <input name="emailcontact" type="email" class="form-control" id="emailcontact">
+                                </div>
+
+                                <div class="mt-3">
+                                    <label for="messagecontact" class="form-label fw-500">Message</label>
+                                    <textarea name="messagecontact" class="form-control " id="messagecontact" rows="2"
+                                        placeholder="Send Message"></textarea>
+                                </div>
+
+                                <div class="mt-3">
+                                    <button type="submit" class="btn btn-primary btn-lg">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <div class="fixed-bottom icons whatsappclass"><a href="#">
+                <ion-icon ios="logo-whatsapp" md="logo-whatsapp"></ion-icon>
+            </a></div>
+
+        <div class="footercontainer">
+            <footer class="social-footer">
+                <div class="social-footer-left">
+                    <span class="copyright" style="user-select: auto;">&nbsp;© Falcorobotics 2020</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item privacypolicy"><a
+                                href="https://falcorobotics.in/privacy-policy.html" target="_blank">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item"></li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
+            </footer>
+
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <script src="script.js">
+
+    </script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js">
+
+    </script> -->
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+</body>
+
+</html>
